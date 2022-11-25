@@ -1,0 +1,98 @@
+.unitek-testimonial-item {
+    display: flex !important;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.testimonial-image-item {
+    width: 45%;
+}
+
+.testimonial-content {
+    width: 52%;
+}
+.unitek-quote-icon .dashicons {
+    background: #39afc7;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    line-height: 52px;
+    border-radius: 50%;
+}
+
+.unitek-quote-icon {
+    margin-bottom: 30px;
+}
+
+.unitek-testimonial-slider .slick-prev {
+    left: -40px;
+}
+
+.unitek-testimonial-slider .slick-next {
+    right: -40px;
+}
+
+.unitek-testimonial-slider .slick-prev .dashicons,  .unitek-testimonial-slider .slick-next .dashicons{
+    color: #39afc7;
+    font-size: 27px;
+}
+
+.unitek-testimonial-slider  .slick-prev:before, .unitek-testimonial-slider  .slick-next:before{
+    display: none;
+}
+
+#unitek-testimonial-slider [type=button], #unitek-testimonial-slider [type=submit], #unitek-testimonial-slider button {
+    border: none;
+    background: none;
+}
+
+#unitek-testimonial-slider [type=button]:focus, #unitek-testimonial-slider [type=submit]:focus, #unitek-testimonial-slider button:focus {
+    outline: none;
+}
+
+.unitek-testimonial-name, .unitek-testimonial-designation {
+    display: block;
+}
+
+@media only screen and ( max-width : 1024px ) {
+
+    .unitek-testimonial-slider .slick-prev {
+        left: 10px;
+        z-index: 99;
+    }
+    .unitek-testimonial-slider .slick-next {
+        right: 10px;
+        z-index: 99;
+    }
+}
+
+@media only screen and ( max-width : 767px ) {
+    .unitek-testimonial-slider .slick-prev, .unitek-testimonial-slider .slick-next{
+        top: auto;
+        bottom: -50px;
+    }
+    .testimonial-image-item {
+        width: 100%;
+    }
+    .testimonial-content {
+        width: 100%;
+    }
+    .unitek-quote-icon {
+        margin-bottom: 0;
+        display: none;
+    }
+    .unitek-quote-icon .dashicons {
+        height: 30px;
+        width: 30px;
+        font-size: 17px;
+        line-height: 32px;
+    }
+    .unitek-testimonial-slider .slick-prev .dashicons,  .unitek-testimonial-slider .slick-next .dashicons{
+        font-size: 20px;
+    }
+    .unitek-testimonial-item {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
